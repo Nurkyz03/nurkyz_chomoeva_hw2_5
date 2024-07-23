@@ -32,6 +32,15 @@
                 android:layout_gravity="end"/>
 
         </HorizontalScrollView>
+        <Button
+            android:id="@+id/buttonContinue"
+            android:background="@drawable/bg_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Orange.Button"
+            android:text="SEND"
+            android:textSize="27sp">
+        </Button>
 
     </FrameLayout>
 

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/second"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context=".SecondActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="420dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/type"
+        android:textColorHint="@color/black"
+        android:background="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        app:cardCornerRadius="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="220dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="64dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="150dp"
+            android:text="@string/free"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="174dp"
+            android:text="@string/price_"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/textViewInsideCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/blue"
+            android:text="@string/category"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/card"
+            app:layout_constraintTop_toTopOf="@id/card" />
+
+        <ImageView
+            android:id="@+id/second_user_icon"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="146dp"
+            android:src="@drawable/icon1"
+            app:layout_constraintStart_toStartOf="@id/card"
+            app:layout_constraintTop_toTopOf="@id/card" />
+
+        <View
+            android:id="@+id/gradient"
+            android:layout_width="80dp"
+            android:layout_height="10dp"
+            android:background="@drawable/gradient"
+            app:layout_constraintStart_toStartOf="@id/card"
+            app:layout_constraintTop_toTopOf="@id/card"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="158dp"/>
+
+        <ImageButton
+            android:id="@+id/heartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onHeartButtonClick"
+            android:src="@drawable/heart"
+            app:layout_constraintStart_toStartOf="@id/card"
+            app:layout_constraintTop_toTopOf="@id/card"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="284dp"
+            android:layout_marginTop="174dp"
+            android:text="@string/accesibility"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="174dp"
+            android:text="@string/participants"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="308dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="onNextButtonClick"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="12dp"
+        android:text="@string/accesibility"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="488dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="12dp"
+        android:text="@string/category"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="12dp"
+        android:text="@string/price"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/seekBar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:valueFrom="0.0"
+        android:valueTo="100.0"
+        app:values="@array/initial_slider_values"
+        android:layout_marginStart="198dp"
+        android:layout_marginTop="410dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/range_seek_bar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:valueFrom="0.0"
+        android:valueTo="100.0"
+        app:values="@array/initial_slider_values"
+        android:layout_marginStart="198dp"
+        android:layout_marginTop="500dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

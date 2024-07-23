@@ -20,4 +20,13 @@
     <string name="_00">0</string>
     <string name="_3">3</string>
     <string name="_1">1</string>
+    <string name="free">Free</string>
+    <string name="price_">Price💰</string>
+    <string name="participants">Participants</string>
+    <string name="accesibility">Accessibility</string>
+    <string name="next">Next</string>
+    <string name="category">Category</string>
+    <string name="type">Type</string>
+    <string name="price">Price</string>
+    <string name="explore">Explore the nightlife of your city</string>
 </resources>
